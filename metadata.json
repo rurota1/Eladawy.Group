@@ -1,0 +1,6 @@
+{
+  "name": "Eladawy Group",
+  "description": "نظام إدارة المعرض والعقارات والمصاريف لمجموعة العدوي المالية - واجهة عربية فاخرة",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

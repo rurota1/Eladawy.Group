@@ -1,0 +1,27 @@
+name: eladawy_group
+description: "نظام إدارة المعرض والعقارات والمصاريف لمجموعة العدوي - تطبيق فلاتر فاخر"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # تهيئة وإعداد الصور والملفات المحددة
+  assets:
+    - assets/images/image_7.png
+    - assets/images/image_8.png
