@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 30px;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.player-score,
+.computer-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-score span,
+.computer-score span {
+    color: #667eea;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.player-score p,
+.computer-score p {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+.divider {
+    color: #667eea;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.game-container {
+    margin: 30px 0;
+    border: 3px solid #667eea;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+    background: #000;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+
+.instructions {
+    margin-top: 30px;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.instructions p {
+    margin: 8px 0;
+}
+
+.instructions strong {
+    color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .scoreboard {
+        gap: 40px;
+        padding: 15px;
+    }
+
+    .player-score p,
+    .computer-score p {
+        font-size: 36px;
+    }
+
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+}
